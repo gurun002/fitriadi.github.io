@@ -138,8 +138,8 @@ h1 {
 }
 /* ======== INDEX (CURIOUS MIND) PAGE ======== */
 .intro {
-  padding: 80px 60px;
-  max-width: 900px;
+  padding: 100px 20px; /* lebih kecil di kiri-kanan */
+  max-width: 800px;
   margin: 0 auto;
   text-align: left;
 }
@@ -172,5 +172,6 @@ h1 {
 .profile-card:hover {
   transform: translateY(-5px);
 }
+
 
 
