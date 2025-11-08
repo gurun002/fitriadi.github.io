@@ -238,3 +238,22 @@ main h1 {
   transform: translateY(1px);
   box-shadow: 0 0 6px rgba(26, 115, 232, 0.3);
 }
+/* === YOUTUBE LINK STYLE === */
+nav a.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-youtube {
+  width: 16px;
+  height: 16px;
+  fill: #ff0000;
+  filter: invert(24%) sepia(93%) saturate(7442%) hue-rotate(2deg) brightness(102%) contrast(113%);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+nav a.youtube-link:hover .icon-youtube {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
