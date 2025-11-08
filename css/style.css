@@ -105,3 +105,136 @@ h2 {
   transform: translateY(-5px);
 }
 
+/* ======== GOOGLE TOOLS PAGE ======== */
+
+main {
+  padding: 80px 60px;
+}
+
+main h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Layout grid untuk cards */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+}
+
+/* Style tiap card */
+.tool-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 5px solid #1a73e8;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul card */
+.tool-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 8px;
+}
+
+/* Deskripsi */
+.tool-card p {
+  flex-grow: 1;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Status */
+.tool-card .status {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+/* Tombol Buka */
+.tool-card .open-btn {
+  align-self: flex-end;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.tool-card .open-btn:hover {
+  background: #0b59d0;
+}
+/* ======== GOOGLE TOOLS PAGE (ENHANCED VERSION) ======== */
+
+/* Animasi masuk lembut untuk setiap card */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan animasi saat load */
+.tool-card {
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+.tool-card:nth-child(1) { animation-delay: 0.1s; }
+.tool-card:nth-child(2) { animation-delay: 0.2s; }
+.tool-card:nth-child(3) { animation-delay: 0.3s; }
+.tool-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Tombol Buka dengan efek glow lembut */
+.tool-card .open-btn {
+  align-self: flex-end;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tool-card .open-btn:hover {
+  background: #0b59d0;
+  box-shadow: 0 0 10px rgba(26, 115, 232, 0.6);
+  transform: translateY(-2px);
+}
+
+.tool-card .open-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 6px rgba(26, 115, 232, 0.3);
+}

@@ -3,29 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Tools – Fitriadi’s</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <script defer src="../js/tools.js"></script>
+  <title>Google Tools – Fitriadi’s Curious Mind</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/js/tools.js"></script>
 </head>
+
 <body>
   <header>
-    <div class="logo">Fitriadi’s</div>
+    <div class="logo">
+      <a href="/index.html">Fitriadi’s</a>
+    </div>
     <nav>
-      <a href="google-tools.html" class="active">Google Tools</a>
-      <a href="office-tools.html">Office Tools</a>
-      <a href="automation.html">Automation</a>
-      <a href="projects.html">Projects</a>
-      <a href="youtube.html">Youtube</a>
+      <a href="/pages/google-tools.html" class="active">Google Tools</a>
+      <a href="/pages/office-tools.html">Office Tools</a>
+      <a href="/pages/automation.html">Automation</a>
+      <a href="/pages/projects.html">Projects</a>
+      <a href="/pages/youtube.html">Youtube</a>
     </nav>
   </header>
 
   <main>
     <h1>Google Tools</h1>
-    <p class="subtitle">Kumpulan aplikasi produktivitas yang dikembangkan untuk mendukung Direktorat Guru PAUD dan PNF</p>
+    <p class="subtitle">
+      Kumpulan aplikasi produktivitas yang dikembangkan untuk mendukung Direktorat Guru PAUD dan PNF
+    </p>
 
-    <div class="tool-grid" id="toolGrid">
-      <!-- konten diisi otomatis oleh tools.js -->
+    <div class="tool-grid">
+      <!-- ===== CARD 1 ===== -->
+      <div class="tool-card">
+        <h3>🧠 Form Builder PAUD & PNF</h3>
+        <p>
+          Membuat Google Form otomatis dari template di Spreadsheet lengkap dengan validasi, log, dan penyimpanan ke Drive.
+        </p>
+        <div class="status">Aktif</div>
+        <a href="https://script.google.com/macros/s/AKfycbw4P-u4pzmj3NAztXg5gu_Gv4xjxDD-IAadB44srkgL98ctoR9R5stfuqRKgYFt5pdA/exec" target="_blank">
+          <button class="open-btn">Buka</button>
+        </a>
+      </div>
+
+      <!-- ===== CARD 2 ===== -->
+      <div class="tool-card">
+        <h3>📋 Form Response Manager</h3>
+        <p>
+          Mengelola hasil respon Google Form secara otomatis ke Google Sheets dengan laporan dinamis dan visualisasi sederhana.
+        </p>
+        <div class="status">Segera Hadir</div>
+        <button class="open-btn" disabled>Dalam Pengembangan</button>
+      </div>
+
+      <!-- ===== CARD 3 ===== -->
+      <div class="tool-card">
+        <h3>🏫 Classroom Automation</h3>
+        <p>
+          Membuat kelas Google Classroom otomatis dan menambahkan peserta berdasarkan data CSV atau Google Sheets.
+        </p>
+        <div class="status">Segera Hadir</div>
+        <button class="open-btn" disabled>Dalam Pengembangan</button>
+      </div>
+
+      <!-- ===== CARD 4 ===== -->
+      <div class="tool-card">
+        <h3>📊 Monev Dashboard</h3>
+        <p>
+          Menyajikan data monitoring dan evaluasi berbasis Google Data Studio yang terintegrasi dengan Google Form.
+        </p>
+        <div class="status">Segera Hadir</div>
+        <button class="open-btn" disabled>Dalam Pengembangan</button>
+      </div>
     </div>
   </main>
+
+  <footer>
+    <p>
+      🚀 Dikembangkan oleh <b>Direktorat Guru PAUD & PNF</b> – Kementerian Pendidikan Dasar dan Menengah<br>
+      <small>Bagian dari proyek pribadi <i>Fitriadi’s Curious Mind</i></small>
+    </p>
+  </footer>
 </body>
 </html>
